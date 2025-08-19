@@ -59,6 +59,13 @@ def printCharacters():
         repeatNums.clear()                
         print()
 
+def inABCOrder():
+    inOrder = list()
+    for x in range(len(lines)):
+        inOrder.append(lines[x])
+    inOrder.sort()
+    for x in range(len(lines)):
+        print(inOrder[x], end = "")
 
 
 character.close()
